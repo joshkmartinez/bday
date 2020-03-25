@@ -1,0 +1,60 @@
+{
+  "name": "bday",
+  "description": "Happy Birthday!",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "export": "next export"
+  },
+  "version": "1.0.0",
+  "main": "pages/index.js",
+  "author": "Joshua K. Martinez",
+  "license": "MIT",
+  "private": false,
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/display-name": "off",
+      "semi": [
+        "error",
+        "never"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
+    },
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "browser": true,
+      "es6": true
+    }
+  },
+  "dependencies": {
+    "next": "^9.3.1",
+    "react": "^16.13.1",
+    "react-confetti": "^5.0.1",
+    "react-dom": "^16.13.1",
+    "react-use": "^13.27.0",
+    "rebass": "^4.0.7"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0"
+  }
+}
